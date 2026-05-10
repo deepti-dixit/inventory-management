@@ -1,0 +1,355 @@
+/* ===============================
+   GLOBAL RESET (BOOTSTRAP SAFE)
+================================ */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 14px !important;
+  overflow-x: hidden;
+  background-color: #f1f3f6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.bg-heading {
+  background:  rgb(23, 63, 103);
+  color: #fff;
+}
+
+/* ===============================
+   COLOR VARIABLES
+================================ */
+:root {
+  --primary: #173f67;
+  --primary-dark: #153a63;
+  --light-bg: #f4f6f9;
+  --white: #ffffff;
+}
+/* dashboard */
+
+.card-dark{
+  background: var(--primary-dark);
+  color:#fff;
+  border: solid 1px  var(--primary-dark);
+  border-radius: 20px;
+}
+.stat-card{
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+}
+/* ===============================
+   HEADER / NAVBAR
+================================ */
+.app-header {
+  background-color: var(--primary);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-box {
+  background: var(--white);
+  color: var(--primary);
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 6px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  padding: 8px 14px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #cfe6ff !important;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 8px 18px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: rgba(23, 63, 103, 0.1);
+}
+
+/* ===============================
+   USER PROFILE
+================================ */
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  background: var(--white);
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* ===============================
+   FILTER PANEL
+================================ */
+.filter-panel {
+  background-color: var(--primary);
+  color: #ffffff;
+  border-radius: 14px;
+}
+
+.filter-panel strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.filter-panel label {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.filter-panel input {
+  margin-right: 8px;
+}
+
+/* ===============================
+   TABLE
+================================ */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table {
+  margin-bottom: 0;
+  background-color: #ffffff;
+}
+
+.table thead th {
+  background-color: var(--primary) !important;
+  color: #ffffff !important;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+    height: 20px !important;
+}
+
+.table td {
+  text-align: center;
+  vertical-align: middle;
+  height: 20px !important;
+  white-space: nowrap;
+  padding: 5px !important;
+}
+
+/* ===============================
+   PAGINATION
+================================ */
+.pagination .page-link {
+  color: var(--primary);
+}
+
+.pagination .active .page-link {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+.icon{
+  width:20px;
+}
+/* ===============================
+   FOOTER
+================================ */
+.app-footer {
+  background-color: var(--primary);
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* ===============================
+   BOOTSTRAP ROW FIX
+================================ */
+.row {
+  --bs-gutter-x: 1rem;
+}
+
+/* vendor page css  */
+.vendor-canvas {
+    width: 720px !important; /* increase as needed */
+    font-size: 12px;
+}
+
+.Item-canvas{
+   width: 320px !important; /* increase as needed */
+    font-size: 12px;
+}
+.label-col {
+    font-weight: 600;
+    text-align: right;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.form-input {
+    width: 100%;
+    padding: 6px 10px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    outline: none;
+    font-size: 12px;
+}
+
+.form-input:focus {
+    border-color: #1e4f7a;
+}
+
+.textarea-lg {
+    height: 90px;
+    resize: none;
+}
+
+.offcanvas-body {
+    background: #f8f9fa;
+
+}
+
+
+/* =====================
+   BUTTONS
+===================== */
+.btn-primary-custom {
+    background: linear-gradient(135deg, #174a7c, #1f6fb2);
+    border: none;
+    border-radius: 14px;
+    padding: 10px 22px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background: linear-gradient(135deg, #0f3c68, #165e9a);
+    transform: translateY(-1px);
+}
+
+/* =====================
+   FORM CARD
+===================== */
+.form-card {
+    background-color: #fff; /* soft warm bg */
+    border-radius: 12px;
+    padding: 40px 45px;
+}
+
+
+/* =====================
+   FORM LABELS
+===================== */
+.fixed-label {
+    width: 130px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #173f67;
+}
+
+/* =====================
+   INPUTS
+===================== */
+.custom-input,
+.custom-textarea {
+    background-color: transparent;
+    border: none;
+    border: 2px solid #cbd5e1;
+    border-radius: 0;
+    padding: 8px 4px;
+    font-size: 12px;
+    transition: all 0.25s ease;
+}
+
+.custom-input:focus,
+.custom-textarea:focus {
+    outline: none;
+    border-bottom-color: #173f67;
+    box-shadow: none;
+}
+.custom-textarea {
+    height: 130px;
+    resize: none;
+}
+
+/* =====================
+   SUBMIT BUTTON
+===================== */
+.submit-btn {
+    background-color: #0b6fa4;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 42px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #095d8a;
+}
+.form-control {
+    box-shadow: none !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+/* delete icon */
+
+.btn-delete {
+  color: #173f67; /* theme color */
+  background: transparent;
+  border: none;
+  padding: 4px;
+  transition: all 0.2s ease;
+}
+
+.btn-delete:hover {
+  color: #dc2626; /* red on hover */
+  transform: scale(1.1);
+}
+
+/* ===============================
+   RESPONSIVE FIXES
+================================ */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .user-avatar {
+    margin-top: 10px;
+  }
+
+  .filter-panel {
+    margin-bottom: 20px;
+  }
+}
